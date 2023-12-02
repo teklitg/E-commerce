@@ -1,0 +1,343 @@
+:root{
+    --orange: hsl(26, 100%, 55%);
+    --Pale-orange: hsl(25, 100%, 94%);
+    --Ver-dark-blue: hsl(220, 13%, 13%);
+    --Dark-grayish-blue: hsl(219, 9%, 45%);
+    --Grayish-blue: hsl(220, 14%, 75%);
+    --Light-grayish-blue: hsl(223, 64%, 98%);
+    --hite: hsl(0, 0%, 100%);
+    --black : hsla(0, 0%, 0%, 75%);
+    --pra-font-size: 16px;
+    --font-family: 'Kumbh Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* postion the content to the center */
+
+header, main, footer{
+    width: 80%;
+    margin: auto;
+    font-family: var(--font-family);
+}
+
+/* header layout */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    border-bottom: solid var(--Grayish-blue) 1px;
+}
+
+/* layout logo and manu */
+
+.header-container{
+    display: flex;
+    gap: 4%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* styling logo and manu */
+
+.logo{
+
+}
+.menu{
+    width: 100%;
+    height: 100%;
+}
+.menu ul{
+    display: flex;
+    gap: 5%;
+    height: 100%;
+    align-items: center;
+}
+.menu ul li{
+    list-style-type: none;
+    color: var(--Dark-grayish-blue);
+    height: 100%;
+    padding-top: 5%;
+    cursor: pointer;
+    font-weight: 400;
+}
+.menu ul li:hover{
+    border-bottom: solid var(--orange);
+    color: var(--black);
+}
+
+/* layout and styling profile */
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 20%;
+}
+.cart{
+cursor: pointer;
+  position: relative;
+}
+.cart-number{
+    background-color: var(--orange);
+    position: absolute;
+    top: -50%;
+    display: none;
+    left: 50%;
+    border-radius: 50%;
+    padding: 10% 20%;
+    font-size: 10px;
+    color: var(--Light-grayish-blue);
+}
+/*  hide cart information */
+.display{
+    position: absolute;
+    display: none;
+    height: 900%;
+    width: 340px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 180%;
+    background-color: var(--hite);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 4%;
+}
+
+.display-cart{
+    padding: 20px;
+    border-bottom: solid var(--Grayish-blue);
+}
+.ma{
+    margin: 20px;
+}
+.noitem{
+    padding: 20px;
+    text-align: center;
+    padding-top: 18%;
+}
+.display-i{
+    flex-direction: column-reverse;
+}
+.a{
+    width: 50px;
+    float: left;
+}
+.b{
+    display: inline-block;
+    width: 74%;
+}
+
+.ckeck{
+    background-color: var(--orange);
+    color: var(--hite);
+    border-radius: 7px;
+    text-align: center;
+    padding: 3% 0;
+    cursor: pointer;  
+    margin-top: 10%; 
+}
+/* hid up to this */
+.profile-photo{
+    margin: 19% 0;
+}
+.profile-photo img{
+    border: solid transparent;
+    width: 80%;
+    cursor: pointer;
+}
+
+.profile-photo img:hover{
+    border-radius: 50% 50%;
+    border: solid var(--orange);
+}
+main{
+    padding: 30px;
+}
+
+/* styling and layout main */
+
+/* lay out main */
+
+main{
+    display: flex;
+}
+
+.imgs{
+    max-width: 50%;
+    margin: 6% 3%;
+}
+
+.big img{
+    max-width: 100%;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+/* layout and style small images */
+.small{
+    padding: 7% 0;
+    display: flex;
+    justify-content: space-between;
+}
+.small img{
+    width: 20%;
+    border-radius: 10%;
+    cursor: pointer;
+}
+.small img:hover{
+    opacity: 0.75;
+}
+
+/* hiden futear */
+
+.fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.fixed-images{
+    position: relative;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+.fixed-big{
+    margin: auto;
+    width: 100%;
+    position: relative;
+}
+.fixed-big-image{
+    margin: auto;
+    width: 70%;
+}
+ .fixed-small{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+.fixed-small img{
+    width: 20%;
+}
+.off{
+    display: none;
+}
+
+.close{
+    position: absolute;
+    left: 67%;
+    top: -4%;
+    cursor: pointer;
+}
+.close:hover{
+    fill: red;
+}
+/* arrow */
+.prv, .nxt{
+    position: absolute;
+    z-index: 11;
+    top: 50%;
+    cursor: pointer;
+}
+.prv{
+   left: 0;
+   rotate: 180deg;
+   left: -2%;
+}
+/* -----------------------*/
+.second{
+    max-width: 50%;
+    padding-top: 14%;
+    padding-left: 8%;
+}
+.item{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--orange);
+}
+.item-d{
+    font-size: 34px;
+    font-weight: bolder;
+    padding: 5% 0;
+}
+.about{
+    color: var(--Dark-grayish-blue);
+}
+.price-con{
+    display: flex;
+    margin-top: 8%;
+}
+.price{
+    color: var(--black);
+    font-size: 24px;
+    font-weight: 1000;
+}
+.discount{
+    background-color: var(--Pale-orange);
+    color: var(--orange);
+    font-weight: 800;
+    margin-left: 10px;
+    border-radius: 20%;
+    display: inline-block;
+    height: 24px;
+    padding: 3px 5px;
+}
+
+.strike{
+    text-decoration-line: line-through;
+    color: var(--Dark-grayish-blue);
+    padding-top: 15px;
+}
+.add{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10%;
+}
+.addo{
+    border-radius: 7px;
+    padding: 4% 0;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bolder;
+    background-color: var(--Light-grayish-blue);
+}
+.minus, .plus{
+    color: var(--orange);
+    cursor: pointer;
+}
+.addt{
+    background-color: var(--orange);
+    color: var(--hite);
+    width: 60%;
+    border-radius: 7px;
+    text-align: center;
+    padding-top: 3%;
+    cursor: pointer;
+}
+.add img{
+    padding-right: 3%;
+}
+/*footer */
+.attribution{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+

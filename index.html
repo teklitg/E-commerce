@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+      <div class="header-container">
+        <div id="logo" class="logo">
+          <img src="images/logo.svg" alt="" srcset="">
+        </div>
+        <div class="menu">
+          <ul>
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="profile">
+        <div class="cart" id="cart">
+          <span class="cart-number">0</span>
+          <img src="images/icon-cart.svg" alt="cart" class="cart-icon">
+          <div class="display">
+            <div class="display-cart">cart</div>
+            <div class="ma">
+              <div class="noitem">Your cart is empty</div>
+              <div class="display-i">
+                <img class="a" src="images/image-product-1-thumbnail.jpg" alt="" srcset="">
+                <span class="b">Fall Limited Edition Sneakers $ 125.00 *<span class="dollar"></span> <bold id="totalprice"></bold></span>
+                <img class="delete" src="images/icon-delete.svg" alt="" srcset="">
+              </div>
+              <div class="ckeck">Checkout</div>
+            </div>
+          </div>
+        </div>
+        <div class="profile-photo">
+          <img src="images/image-avatar.png" alt="" class="avatar">
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="imgs">
+        <div class="big">
+          <img src="images/image-product-1.jpg" onclick="hidandshow()" class="big-image">
+          <img src="images/image-product-2.jpg" onclick="hidandshow()" class="big-image">
+          <img src="images/image-product-3.jpg" onclick="hidandshow()" class="big-image">
+          <img src="images/image-product-4.jpg" onclick="hidandshow()" class="big-image">
+        </div>
+        <div class="small">
+          <img src="images/image-product-1-thumbnail.jpg" onclick="showImage(0)">
+          <img src="images/image-product-2-thumbnail.jpg" onclick="showImage(1)">
+          <img src="images/image-product-3-thumbnail.jpg" onclick="showImage(2)">
+          <img src="images/image-product-4-thumbnail.jpg" onclick="showImage(3)">
+        </div>
+      </div>
+
+      </div>
+      <div class="second" >
+        <div class="item">Sneaker Company</div>
+        <div class="item-d">Fall Limited Edition Sneakers</div>
+        <div class="about">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they&#39ll withstand everything the weather can offer.
+        </div>
+        <div class="price-con">
+          <div class="price">
+            $125.00
+          </div>
+          <div class="discount">
+            50%
+          </div>
+        </div>
+        <div class="strike">
+          $250.00
+        </div>
+        <div class="add">
+          <div class="addo"><span class="minus">-</span><span id="orderNumber">0</span><span class="plus">+</span></div>
+          <div class="addt"><img src="/images/icon-cart2.svg"> Add to cart</div>
+        </div>
+      </div>
+    </main>
+    <div class="fixed">
+      <div class="fixed-images">
+        <span class="close" onclick="hidandshow()"><img src="images/icon-close.svg" ></span>
+
+        <div class="fixed-big">
+          <img src="images/image-product-1.jpg"  class="fixed-big-image">
+          <img src="images/image-product-2.jpg"  class="fixed-big-image">
+          <img src="images/image-product-3.jpg"  class="fixed-big-image">
+          <img src="images/image-product-4.jpg"  class="fixed-big-image">
+          <span class="prv"><img src="/images/icon-next.svg" alt=""></span>
+          <span class="nxt"><img src="/images/icon-next.svg" alt=""></span>
+        </div>
+        <div class="fixed-small" id="j">
+          <img src="images/image-product-1-thumbnail.jpg" onclick="showImage(0)">
+          <img src="images/image-product-2-thumbnail.jpg" onclick="showImage(1)">
+          <img src="images/image-product-3-thumbnail.jpg" onclick="showImage(2)">
+          <img src="images/image-product-4-thumbnail.jpg" onclick="showImage(3)">
+        </div>
+      </div>
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Teklit G</a>.
+      </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
